@@ -57,16 +57,15 @@ if ($checkSession) {
 		  }
 		  
       // then we leave the outer loop
-		  if ($hasValidEmail){
-			  break;
-		  }
+      if ($hasValidEmail){
+        break;
+      }
 	   }
 
    }
       
-   // we create a php session for the user
-   	$_SESSION["userID"] = $userID;
-
+  // we create a php session for the user
+  $_SESSION["userID"] = $userID;
 
 	if ($hasValidEmail){
     // if he uses is an admin, we redirect him to the admin page after setting the session
