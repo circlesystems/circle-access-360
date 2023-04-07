@@ -1,1 +1,1 @@
-const appKey = ""; // this is your gocircle.ai app key - NOT the console one
+const appKey = ""; // this is your circlesecurity.ai app key - NOT the console one

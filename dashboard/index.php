@@ -61,13 +61,13 @@ if (!isset($_SESSION["userID"]) || !isset($_SESSION["isAdmin"])) {
             <div class="col-md-8 mx-auto">
               <ul class="list-inline list-unstyled">
               </ul>
-              <a href="https://dev.gocircle.ai/developer-hub/demos/">
-              <img src="https://circleauth.gocircle.ai/img/circle-logo-nocompromise.svg" alt="">
+              <a href="https://dev.circlesecurity.ai/developer-hub/demos/">
+              <img src="https://circleaccess.circlesecurity.ai/img/circle-logo-nocompromise.svg" alt="">
               </a>
               <p class="small text-muted mb-0">
                 ©2022 Circle Systems, Inc. All rights reserved.
               </p>
-              <a class="small text-muted" href="https://circleauth.gocircle.ai/legal">Privacy Policy and Terms of Use</a>
+              <a class="small text-muted" href="https://circleaccess.circlesecurity.ai/legal">Privacy Policy and Terms of Use</a>
             </div>
           </div>
         </div>

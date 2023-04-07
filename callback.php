@@ -20,7 +20,7 @@ $checkSession = validateUserSession($sessionID, $userID);
 // this would normally come from the DB
 // For the demo only, we hardcoded. 
 // You can use the same logic as in the DB or just add you emails here while testing
-$adminEmails = array("curcio@gocircle.ai");
+$adminEmails = array("curcio@circlesecurity.ai");
 
 // if valid, we get the user email hashes
 if ($checkSession) {
