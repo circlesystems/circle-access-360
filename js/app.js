@@ -1,4 +1,4 @@
-const apiUrl = 'https://internal.gocircle.ai/api/docs/';
+const apiUrl = 'https://internal.circlesecurity.ai/api/docs/';
 
 var currentCircle = "";
 var currentTopic = "";
