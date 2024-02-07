@@ -15,5 +15,5 @@
     define('ACCESS_LOGIN_URL', '');
     define('ACCESS_READ_KEY', '');
     define('ACCESS_WRITE_KEY', '');
-    define('CIRCLEAUTH_DOMAIN', 'https://circleauth.gocircle.ai/');
+    define('CIRCLEAUTH_DOMAIN', 'https://circleaccess.circlesecurity.ai/');
 ?>
