@@ -8,7 +8,7 @@
     define('APIURL', 'https://api.gocircle.ai/api/token');
     
     
-    // get these ones from https://console.gocircle.ai/ - create a new application and get the credentials
+    // get these ones from https://www.circlesecurity.ai/ - create a new application and get the credentials
     // for the FIELD return url - use:
     // https://<yourdomain>/<yourfolder_with_this_project>/callback.php  <--- this file is on the root of the project
     define('ACCESS_APPKEY', '');
