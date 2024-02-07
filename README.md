@@ -23,16 +23,27 @@ This PHP script facilitates secure user authentication by validating sessions an
 - Use `hashText` function to securely compare user email hashes against admin list.
 
 ## Usage
-Redirect authentication callbacks to `callback.php` for secure user authentication and session management. The script will:
-1. Validate the session ID and user ID.
-2. Check if the user's email hash matches any in the predefined admin list.
-3. Redirect users based on their role after successful authentication.
+Redirect authentication callbacks to `callback.php` for secure user authentication and session management. The script will provide a secure and efficient authentication flow:
+
+1. **Error Reporting**: Initially, the script enables comprehensive error reporting to aid in debugging during development.
+
+2. **Session Management**: It begins by initiating a session and includes the Circle Access authentication module for handling authentication processes.
+
+3. **User and Session ID Validation**: The script captures `userID` and `sessionID` from the request, validating them to ensure they correspond to a valid user session.
+
+4. **Session and Role Verification**: Through the validation process, it checks if the session is active and if the user's email is listed among the admin emails. This is done securely using SHA-256 hashing for email comparison, illustrating the script's commitment to security.
+
+5. **Secure Redirection**: Depending on the outcome of the email verification, the script redirects users to appropriate dashboards - admin users to an admin dashboard and regular users to a user-specific page. This redirection is preceded by expiring the user's current session to prevent replay attacks, highlighting the script's robust security measures.
+
+6. **Unauthorized Access Handling**: If a user fails the authentication checks, the script displays a message indicating unauthorized access, directing them to retry the login process.
+
+This authentication flow underscores the script's dual focus on security and user experience, ensuring that users are authenticated securely and directed to resources that match their access level.
+
 
 ## Security Practices
-Ensure all traffic is served over HTTPS to protect sensitive information during transmission.
 
-## Contributing
-Contributions to enhance the script's functionality or security are welcome. Please submit pull requests or issues through GitHub.
+In a real-world application, the admin emails used for authentication in ```callback.php``` would typically be stored in a database.
+The script would then query this database to retrieve and verify user emails during the authentication process, ensuring a dynamic and secure management of user roles and permissions. This approach allows for scalable and manageable user access control, facilitating session initiation based on validated user credentials directly from the database.
 
 ## License
 This script is released under the MIT License. See the LICENSE file for more details.
