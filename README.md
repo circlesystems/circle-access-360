@@ -12,6 +12,7 @@ This PHP script facilitates secure user authentication by validating sessions an
 ## Getting Started
 
 ### Prerequisites
+- Update ```ajax/constants.php``` with your appKey, write and read keys. You can request one on www.circlesecurity.ai
 - Circle Access authentication module included in the project
 
 ### Installation
