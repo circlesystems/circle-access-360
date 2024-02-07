@@ -3,6 +3,9 @@
 ## Overview
 This PHP script facilitates secure user authentication by validating sessions and managing user roles within web applications. It ensures that user credentials are properly authenticated and that sessions are securely managed to prevent replay attacks.
 
+## Demo
+You can see it in action here: https://circleaccess.circlesecurity.ai/demo
+
 ## Features
 - **Secure Authentication**: Utilizes Circle Access for robust user authentication.
 - **Session Validation**: Checks the validity of user sessions to prevent unauthorized access.
@@ -40,7 +43,6 @@ Redirect authentication callbacks to `callback.php` for secure user authenticati
 6. **Unauthorized Access Handling**: If a user fails the authentication checks, the script displays a message indicating unauthorized access, directing them to retry the login process.
 
 This authentication flow underscores the script's dual focus on security and user experience, ensuring that users are authenticated securely and directed to resources that match their access level.
-
 
 ## Security Practices
 
